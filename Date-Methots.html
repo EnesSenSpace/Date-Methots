@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Date Methods</title>
+        <style>
+            h1 {
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            table {
+                margin: auto;
+                border-collapse: collapse;
+                border: 2px solid rgb(0, 0, 0);
+            }
+
+            th,
+            td {
+                border: 1px solid rgb(0, 0, 0);
+                padding: 10px;
+            }
+
+            th {
+                background-color: #cccccc;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Date Methods Table</h1>
+        <table>
+            <tr>
+                <th>Metod Adı</th>
+                <th>Açıklama</th>
+                <th>Örnek Kullanım</th>
+            </tr>
+            <tr>
+                <td>getFullYear()</td>
+                <td>Tarihin yılını dört haneli bir sayı olarak döndürür.</td>
+                <td>new Date().getFullYear() 2023 değerini döndürür.</td>
+            </tr>
+            <tr>
+                <td>getMonth()</td>
+                <td>
+                    Tarihin ayını sıfır tabanlı bir sayı olarak döndürür (0-11)
+                </td>
+                <td>
+                    new Date().getMonth() Nisan ayı için 3 değerini döndürür.
+                </td>
+            </tr>
+            <tr>
+                <td>getDate()</td>
+                <td>
+                    Tarihin ayın kaçıncı günü olduğunu bir sayı olarak döndürür
+                    (1-31)
+                </td>
+                <td>new Date().getDate() 30 değerini döndürür.</td>
+            </tr>
+            <tr>
+                <td>getDay()</td>
+                <td>
+                    Tarihin haftanın kaçıncı günü olduğunu sıfır tabanlı bir
+                    sayı olarak döndürür (0-6)
+                </td>
+                <td>new Date().getDay() Cuma günü için 5 değerini döndürür.</td>
+            </tr>
+            <tr>
+                <td>getHours()</td>
+                <td>Tarihin saati olarak bir sayı döndürür (0-23)</td>
+                <td>new Date().getHours() şu anki saati döndürür.</td>
+            </tr>
+            <tr>
+                <td>getMinutes()</td>
+                <td>Tarihin dakikası olarak bir sayı döndürür (0-59)</td>
+                <td>new Date().getMinutes() şu anki dakikayı döndürür.</td>
+            </tr>
+            <tr>
+                <td>getSeconds()</td>
+                <td>Tarihin saniyesini bir sayı olarak döndürür (0-59)</td>
+                <td>new Date().getSeconds() şu anki saniyeyi döndürür.</td>
+            </tr>
+            <tr>
+                <td>getMilliseconds()</td>
+                <td>Tarihin milisaniyesini bir sayı olarak döndürür (0-999)</td>
+                <td>
+                    new Date().getMilliseconds() şu anki milisaniyeyi döndürür.
+                </td>
+            </tr>
+            <tr>
+                <td>getTime()</td>
+                <td>
+                    1 Ocak 1970'den bu yana geçen milisaniye sayısını döndürür
+                </td>
+                <td>
+                    new Date().getTime() bir zaman damgası (timestamp) döndürür.
+                </td>
+            </tr>
+        </table>
+
+        <script src="script.js"></script>
+    </body>
+</html>
